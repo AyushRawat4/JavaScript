@@ -32,3 +32,30 @@ console.log(id==idNew);
     }
 
     console.log(typeof myFunction);
+
+
+    // *******************************************************************************************************************************
+     
+    // M E M O R Y
+    
+    //  Stack(primitive) , Heap (non-primitive)
+
+    let firstName = "ayush"
+    let lastName = firstName
+      lastName = "rawat"
+
+      console.log(firstName);
+      console.log(lastName);
+      
+    let user1 = {
+        email : "abc@gmail.com",
+        upi: "123@ybl"
+
+    }  
+
+    let user2 = user1
+
+    user2.email = "ayush@gmail.com"
+
+    console.log(user1.email);
+    console.log(user2.email);
