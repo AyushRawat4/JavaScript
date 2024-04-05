@@ -45,8 +45,34 @@ const users = [                             // array of objrcts
      2: "b"}
 ]
 
-console.log(user);
-console.log(Object.keys(user));
-console.log(Object.values(user));
-console.log(Object.entries(user));
-console.log(user.hasOwnProperty("isLogin"));
+// console.log(user);
+// console.log(Object.keys(user));
+// console.log(Object.values(user));
+// console.log(Object.entries(user));
+// console.log(user.hasOwnProperty("isLogin"));
+
+
+// ########################################################################################################################################3
+
+
+//  OBJECT DESTRUCTURING   
+
+
+const course = {
+    courseName : "javascript",
+    coursePrice : "9999",
+    courseInstructor : "Rawatji",
+    courseDepartment : "Web Development"
+}
+
+// course.courseInstructor                   if this looks lenghtty to you to print then you can do so 
+
+//  O N E WAY
+// const {courseInstructor} = course
+
+// console.log(courseInstructor);                    // one way you can now use only courseInstructor
+
+
+// ANOTHER WAY
+const {courseInstructor : Instructor} = course
+console.log(Instructor);                                // now we can use courseInstructor as Instructor as its renaming as INstructor
