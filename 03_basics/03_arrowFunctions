@@ -1,0 +1,57 @@
+const user = {
+    username : "YABA DABA DOO",
+    price : (349*25)/100,
+
+    welcomMessage : function(){
+        console.log(`${this.username} , Welcome to our Website`);
+        console.log(this);
+    }
+}
+
+// user.welcomMessage()
+// user.username = " buttowski"
+// user.welcomMessage()
+
+// console.log(this);
+
+// function chai(){
+//     console.log(this);
+// }
+
+// function chai(){
+//     let username = "Rawat"
+//     console.log(this.username);                             // will not work bcoz this does not work like that
+// }
+
+// const chai = function(){
+//     let username = "Rawat"  
+//     console.log(this.username);                                // will also not work 
+// }
+
+
+const chai = () => {                                       // ARROW FUNCTION
+    let username = "Rawat"  
+    console.log(this.username);                                // will also not work 
+}
+// chai()
+
+
+// const addTwoNums = (num1,num2) => {
+
+//     return num1+num2
+// }
+
+//                   OR
+
+// const addTwoNums = (num1,num2) => num1+num2                        // if you have one liner return value no need to type return keyword
+ 
+//              OR 
+
+const addTwoNums = (num1,num2) => (num1+num2 )
+
+// const addTwoNums = (num1,num2) => ({user : "ayush"})                  when returning a object 
+
+console.log(addTwoNums(300000,20000));
+
+
+// IMPORTANT NOTE   :-  when we use brasis{} we use return keyword and when we do not use brasis we do not write return or when we use parenthesis
